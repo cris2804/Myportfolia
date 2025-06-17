@@ -1,0 +1,48 @@
+---
+// filepath: src/components/MagicCursor.astro
+---
+<canvas id="magic-cursor-canvas" style="position:fixed;top:0;left:0;width:100vw;height:100vh;pointer-events:none;z-index:99999;"></canvas>
+<script>
+  const canvas = document.getElementById('magic-cursor-canvas');
+  const ctx = canvas.getContext('2d');
+  let particles = [];
+
+  function resizeCanvas() {
+    canvas.width = window.innerWidth;
+    canvas.height = window.innerHeight;
+  }
+  resizeCanvas();
+  window.addEventListener('resize', resizeCanvas);
+
+  document.addEventListener('mousemove', function(e) {
+    for (let i = 0; i < 5; i++) {
+      particles.push({
+        x: e.clientX,
+        y: e.clientY,
+        vx: (Math.random() - 0.5) * 2,
+        vy: (Math.random() - 0.5) * 2,
+        alpha: 1,
+        radius: Math.random() * 2 + 2,
+        color: `rgba(255, 247, 178, 1)`
+      });
+    }
+  });
+
+  function animate() {
+    ctx.clearRect(0, 0, canvas.width, canvas.height);
+    particles.forEach((p, i) => {
+      p.x += p.vx;
+      p.y += p.vy;
+      p.alpha -= 0.02;
+      ctx.beginPath();
+      ctx.arc(p.x, p.y, p.radius, 0, 2 * Math.PI);
+      ctx.fillStyle = `rgba(255, 247, 178, ${p.alpha})`;
+      ctx.shadowColor = "#ffe0fa";
+      ctx.shadowBlur = 10;
+      ctx.fill();
+      if (p.alpha <= 0) particles.splice(i, 1);
+    });
+    requestAnimationFrame(animate);
+  }
+  animate();
+</script>

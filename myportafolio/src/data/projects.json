@@ -1,0 +1,86 @@
+[
+  {
+    "name": {
+      "en": "MeddAssist - AI Medical Assistant",
+      "es": "MeddAssist - Asistente Médico con IA"
+    },
+    "desc": {
+      "en": "Responsive web app providing AI-powered medical assistance. Built with React and designed with usability in mind.",
+      "es": "Aplicación web responsiva que ofrece asistencia médica basada en IA. Construida con React y enfocada en la usabilidad."
+    },
+    "tools": ["React", "Vite", "Figma", "CSS"],
+    "github": "https://github.com/cris2804/MedAssistProject"
+  },
+  {
+    "name": {
+      "en": "Smart Parking UNI",
+      "es": "Parqueo Inteligente UNI"
+    },
+    "desc": {
+      "en": "Smart parking platform for UNI's Smart Campus. Real-time spot reservation and UI/UX design using Tailwind.",
+      "es": "Plataforma de parqueo inteligente para el Smart Campus de la UNI. Reserva de espacios en tiempo real y diseño UI/UX con Tailwind."
+    },
+    "tools": ["React", "Tailwind", "REST APIs", "Figma"],
+    "github": "https://github.com/cris2804/ctic_proyecto"
+  },
+  {
+    "name": {
+      "en": "INEN Hospitalization Dashboard – Datathon Perú",
+      "es": "Dashboard de Hospitalizaciones INEN – Datathon Perú"
+    },
+    "desc": {
+      "en": "Interactive dashboard built with Streamlit and Plotly to analyze hospitalization trends. Proposed AI-based demand prediction system.",
+      "es": "Dashboard interactivo con Streamlit y Plotly para analizar tendencias de hospitalización. Propuesta de sistema predictivo con IA."
+    },
+    "tools": ["Python", "Streamlit", "Plotly", "Figma"],
+    "github": "https://github.com/cris2804/Dashboard-INEN"
+  },
+  {
+  "name": {
+    "en": "Android Face Recognition App",
+    "es": "App de Reconocimiento Facial en Android"
+  },
+  "desc": {
+    "en": "Mobile app capable of detecting and recognizing faces using OpenCV and native Android camera. Developed using MVVM architecture.",
+    "es": "Aplicación móvil capaz de detectar y reconocer rostros usando OpenCV y la cámara nativa de Android. Desarrollada con arquitectura MVVM."
+  },
+  "tools": ["Kotlin", "OpenCV", "MVVM"],
+  "github": "https://github.com/cris2804/face-recognition-app"
+},
+  {
+    "name": {
+      "en": "Multiplayer Chess Game",
+      "es": "Juego de Ajedrez Multijugador"
+    },
+    "desc": {
+      "en": "Real-time online chess game with live socket connections and MongoDB data persistence.",
+      "es": "Juego de ajedrez en línea con conexión en tiempo real y almacenamiento en MongoDB."
+    },
+    "tools": ["Node.js", "Express", "MongoDB", "Socket.IO"],
+    "github": "https://github.com/cris2804/chess-multiplayer"
+  },
+  {
+    "name": {
+      "en": "Phishing Simulation in domains uni.pe",
+      "es": "Simulación de Phishing en dominios uni.pe"
+    },
+    "desc": {
+      "en": "Phishing simulation in a educative environment with results presented in PowerBI dashboards.",
+      "es": "Simulación de phishing en entorno educativo con resultados visualizados en tableros PowerBI."
+    },
+    "tools": ["HTML", "CSS", "JavaScript", "PowerBI","Gophish"],
+    "github": "https://github.com/cris2804/Pishing-campaign-on-uni.pe-domains"
+  },
+  {
+    "name": {
+      "en": "CTF Challenge – CiberSecUNI",
+      "es": "Reto CTF – CiberSecUNI"
+    },
+    "desc": {
+      "en": "Frontend and challenge design for internal Capture The Flag (CTF) competition. Used Python scripting and Bootstrap.",
+      "es": "Diseño de frontend y retos para competencia CTF interna. Uso de scripts en Python y Bootstrap."
+    },
+    "tools": ["Python", "HTML", "Bootstrap", "Figma"],
+    "github": "https://www.figma.com/design/dkjUhvLZ2eelm8KHmK8Ijd/CTF?t=LoC6ioL1Orxij2Sy-1" 
+  }
+]

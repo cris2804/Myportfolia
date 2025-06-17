@@ -1,0 +1,654 @@
+---
+import "../styles/global.css";
+import Navbar from "../components/Navbar.astro";
+import projects from "../data/projects.json";
+import MagicCursor from "../components/MagicCursor.astro";
+---
+
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Milagros Cristina | Frontend & Cybersecurity</title>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Iceland&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Iceland&family=Inter:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <Navbar />
+
+    <!-- Hero Section -->
+    <section id="hero" class="hero">
+      <div>
+        <div data-lang="en">
+          <h1 class="hero-title" style="font-weight: bold; font-size: 4rem;">
+            Hello I'm <br />
+            <span
+              class="highlight"
+              style="font-size: 5vh; background: linear-gradient(270deg, #DCCEF4 0%, #B62FFF 14.42%, #DCCEF4 27.88%, #B62FFF 38.46%, #DCCEF4 50%, #B62FFF 58.65%, #DCCEF4 68.27%, #B62FFF 80.29%, #DCCEF4 92.79%);
+            background-clip: text;
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;"
+              >Milagros Cristina</span
+            >
+          </h1>
+          <h2 style="display: flex; flex-direction: row; gap: 0.5rem;">
+            I'm <span class="highlight-alt typewriter"
+              >Frontend Developer & Cybersecurity Learner</span
+            >
+          </h2>
+          <p class="intro">
+            I'm a passionate frontend developer who discovered the fascinating
+            world of cybersecurity. This unique combination allows me to build
+            secure, beautiful applications while understanding the threats they
+            face. My frontend expertise helps me create intuitive user
+            experiences, while my cybersecurity knowledge ensures these
+            experiences are built with security in mind from the ground up.
+          </p>
+        </div>
+        <div data-lang="es">
+          <h1 class="hero-title" style="font-weight: bold; font-size: 4rem;">
+            Hola, soy <br />
+            <span class="highlight" style="font-size: 5vh;"
+              >Milagros Cristina</span
+            >
+          </h1>
+          <h2>
+            Soy <span class="highlight-alt typewriter"
+              >Desarrolladora Frontend y aprendiz de Ciberseguridad</span
+            >
+          </h2>
+          <p class="intro">
+            Soy una desarrolladora frontend apasionada que descubrió el
+            fascinante mundo de la ciberseguridad. Esta combinación única me
+            permite construir aplicaciones seguras y atractivas comprendiendo
+            las amenazas que enfrentan. Mi experiencia en frontend me ayuda a
+            crear experiencias intuitivas, mientras que mi conocimiento en
+            ciberseguridad garantiza que estén construidas con seguridad desde
+            la base.
+          </p>
+        </div>
+        <div class="social-links">
+          <a
+            href="https://github.com/cris2804"
+            rel="noopener"
+            title="GitHub"
+            style="text-decoration: none;"
+          >
+            <img src="/images/github.png" class="imgicon" />
+          </a>
+          <a
+            href="https://linkedin.com/in/milagroscristina-ruizarica"
+            rel="noopener"
+            title="LinkedIn"
+            style="text-decoration: none;"
+          >
+            <img src="/images/linkdn.png" class="imgicon" />
+          </a>
+          <a
+            href="https://twitter.com/"
+            rel="noopener"
+            title="Twitter"
+            style="text-decoration: none;"
+          >
+            <img src="/images/cv.png" class="imgicon" />
+          </a>
+        </div>
+      </div>
+      <div>
+        <img class="hero-image"
+          src="https://i.ibb.co/4njfjJ3b/image-19.png"
+          alt="Hero Image"
+        />
+      </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="about">
+      <div data-lang="en">
+        <h2 class="subtitle">About Me</h2>
+        <p class="intro">
+          I'm a Computer Science student at UNI with experience in developing
+          modern and responsive frontend interfaces using React, Tailwind,
+          FlutterFlow, and more. I've also worked in cybersecurity, conducting
+          phishing simulations, vulnerability assessments, and actively
+          participating in Capture The Flag (CTF) challenges as a member of
+          CiberSecUNI.
+        </p>
+        <h2 style="font-size:2rem;">Technical Overview</h2>
+      </div>
+      <div data-lang="es">
+        <h2 class="subtitle">Sobre mí</h2>
+        <p class="intro">
+          Soy estudiante de Ciencia de la Computación en la UNI con experiencia
+          en el desarrollo de interfaces frontend modernas y responsivas
+          utilizando React, Tailwind, FlutterFlow y más. También he trabajado en
+          ciberseguridad, realizando simulaciones de phishing, evaluaciones de
+          vulnerabilidades y participando activamente en competencias Capture
+          The Flag (CTF) como miembro de CiberSecUNI.
+        </p>
+        <h2 style="font-size:2rem;">Resumen Técnico</h2>
+      </div>
+
+      <div class="tech-icons">
+        <div
+          style="display: flex; flex-direction: row; gap: 2rem; justify-content: space-around;"
+        >
+          <img src="/icon/react.png" class="icon-tm" />
+          <img src="/icon/astro.png" class="icon-tm" />
+          <img src="/icon/JavaScript.png" class="icon-tm" />
+          <img src="/icon/flutterflow.png" class="icon-tm" />
+          <img src="/icon/nogejs.png" class="icon-tm" />
+        </div>
+        <div
+          style="display: flex; flex-direction: row; gap: 2rem; justify-content: space-around;"
+        >
+          <img src="/icon/postman.png" class="icon-tm" />
+          <img src="/icon/python.png" class="icon-tm" />
+          <img src="/icon/wireshark.png" class="icon-tm" />
+          <img src="/icon/angular.png" class="icon-tm" />
+          <img src="/icon/git.png" class="icon-tm" />
+        </div>
+      </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects" class="projects">
+      <h2 class="subtitle" data-lang="en">Featured Projects</h2>
+      <h2 class="subtitle" data-lang="es">Proyectos Destacados</h2>
+      <div class="project-grid">
+        {
+          projects.map((project) => (
+            <>
+              <div class="project-card" data-lang="en">
+                <h3 style="font-family: 'Iceland'; font-size: 1.5rem;">
+                  {project.name.en}
+                </h3>
+                <p style="font-family: 'Iceland'; font-size: 1rem;">
+                  {project.desc.en}
+                </p>
+                <div class="tools">
+                  {project.tools.map((tool) => (
+                    <span class="tool">{tool}</span>
+                  ))}
+                </div>
+                <a
+                  href={project.github}
+                  style="color: white; font-size:small ;"
+                >
+                  GitHub
+                </a>
+              </div>
+              <div class="project-card" data-lang="es">
+                <h3 style="font-family: 'Iceland'; font-size: 1.5rem;">
+                  {project.name.es}
+                </h3>
+                <p style="font-family: 'Iceland'; font-size: 1rem;">
+                  {project.desc.es}
+                </p>
+                <div class="tools">
+                  {project.tools.map((tool) => (
+                    <span class="tool">{tool}</span>
+                  ))}
+                </div>
+                <a
+                  href={project.github}
+                  style="color: white; font-size:small ;"
+                >
+                  GitHub
+                </a>
+              </div>
+            </>
+          ))
+        }
+      </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact">
+      <h2 data-lang="en" class="title-contact">Get In Touch</h2>
+      <h2 data-lang="es" class="title-contact">Contáctame</h2>
+      <p data-lang="en" class="intro-contact">
+        Ready to collaborate on your next project or discuss cybersecurity?
+        Let's connect!
+      </p>
+      <p class="intro-contact" data-lang="es">
+        ¿List@ para colaborar en tu próximo proyecto o hablar de ciberseguridad?
+        ¡Conectemos!
+      </p>
+
+      <div class="contact-wrapper">
+        <div class="contact-info">
+          <h3 data-lang="en" class="contact-subt">Let's Work Together</h3>
+          <h3 data-lang="es" class="contact-subt">Trabajemos Juntos</h3>
+          <p data-lang="en" class="intro-contact">
+            Whether you need a secure web application, want to discuss
+            cybersecurity best practices, or just want to chat about the latest
+            in tech, I'd love to hear from you.
+          </p>
+          <p data-lang="es" class="intro-contact">
+            Whether you need a secure web application, want to discuss
+            cybersecurity best practices, or just want to chat about the latest
+            in tech, I'd love to hear from you.
+          </p>
+          <p data-lang="es" class="intro-contact">
+            Ya sea que necesites una aplicación web segura, quieras hablar sobre
+            buenas prácticas en ciberseguridad o simplemente charlar sobre
+            tecnología, estaré encantada de escucharte.
+          </p>
+          <p><strong>Email:</strong> cristinaruizarica@gmail.com</p>
+          <p><strong>Location:</strong> Lima, Perú</p>
+        </div>
+
+        <div data-lang="en" class="contact-form-in">
+          <form
+            action="https://formsubmit.co/bc77463023be7c9ec189e2ca565c7371"
+            method="POST"
+            class="contact-form"
+          >
+            <input type="text" name="name" placeholder="Name" required />
+            <input type="email" name="email" placeholder="Email" required />
+            <textarea name="message" placeholder="Message" required></textarea>
+            <input type="hidden" name="_captcha" value="false" />
+            <button type="submit">Send Message</button>
+          </form>
+        </div>
+
+        <div data-lang="es">
+          <form
+            action="https://formsubmit.co/bc77463023be7c9ec189e2ca565c7371"
+            method="POST"
+            class="contact-form"
+          >
+            <input type="text" name="name" placeholder="Nombre" required />
+            <input type="email" name="email" placeholder="Correo" required />
+            <textarea name="message" placeholder="Mensaje" required></textarea>
+            <input type="hidden" name="_captcha" value="false" />
+            <button type="submit">Enviar Mensaje</button>
+          </form>
+        </div>
+      </div>
+    </section>
+
+    <script>
+      // Extend the Window interface for TypeScript
+      declare global {
+        interface Window {
+          toggleLanguage: (lang: string) => void;
+        }
+      }
+
+      function toggleLanguage(lang: string) {
+        // Hide all elements with data-lang
+        const allElements = document.querySelectorAll("[data-lang]");
+        allElements.forEach((el) => {
+          (el as HTMLElement).style.display = "none";
+        });
+
+        // Show only the elements of the selected language
+        const selectedElements = document.querySelectorAll(
+          `[data-lang="${lang}"]`,
+        );
+        selectedElements.forEach((el) => {
+          (el as HTMLElement).style.display = "";
+        });
+      }
+
+      // Make the function globally accessible
+      window.toggleLanguage = toggleLanguage;
+
+      // Initialize in English when the page loads
+      document.addEventListener("DOMContentLoaded", function () {
+        toggleLanguage("en");
+      });
+    </script>
+    <MagicCursor />
+  </body>
+</html>
+<style>
+  .hero {
+    padding: 8vh;
+    height: max-content;
+    height: 85vh;
+    background: linear-gradient(180deg, #0f172a 53.85%, #39024f 100%);
+    display: flex;
+    flex-direction: row;
+  }
+  .intro {
+    font-family: "Iceland";
+    font-size: 1.8rem;
+    width: 80%;
+  }
+  .hero-image{
+    width: 40vh; height: 70%; max-width: 600px; margin-top: 2rem;
+  }
+  .social-links {
+    border-radius: 0px 20px 20px 0px;
+    background: rgba(243, 197, 255, 0.92);
+    width: 11rem;
+    height: 4vh;
+    display: flex;
+    flex-direction: row;
+    gap: 1rem;
+    padding: 1rem;
+    justify-content: space-between;
+    align-items: center;
+  }
+  .icon-tm {
+    width: 5rem;
+    height: 5rem;
+  }
+  .imgicon {
+    width: 2rem;
+    height: 2rem;
+    margin: 0 0.5rem;
+    cursor: pointer;
+  }
+  .about {
+    padding: 3rem 9rem;
+  }
+  .subtitle {
+    font-family: Inter;
+    font-size: 48px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    background: linear-gradient(90deg, #e371ff 0%, #51e441 77.4%);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    width: 40%;
+  }
+
+  .tech-icons {
+    border-radius: 15px;
+    border: 1px solid #ac67ba;
+    background: rgba(146, 146, 146, 0.21);
+    display: flex;
+    flex-wrap: wrap;
+    gap: 2rem;
+    margin-top: 2rem;
+    min-height: 20vh;
+    padding: 2rem;
+    flex-direction: column;
+  }
+  .projects {
+    padding: 3rem 9rem;
+  }
+  .project-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    gap: 2rem;
+    align-items: stretch;
+  }
+  .project-card {
+    border-radius: 15px;
+    border: 1px solid #ac67ba;
+    background: rgba(146, 146, 146, 0.21);
+    padding: 1.5rem;
+    transition: transform 0.3s ease;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    transition:
+      transform 0.3s cubic-bezier(0.25, 0.8, 0.25, 1),
+      box-shadow 0.3s;
+
+    /* height: 100%; */
+  }
+  .project-card:hover {
+    transform: scale(1.06);
+    box-shadow:
+      0 8px 32px 0 rgba(80, 0, 120, 0.25),
+      0 1.5px 8px 0 #e371ff;
+    z-index: 2;
+  
+  }
+  .tools {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.5rem;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+  }
+  .tool {
+    border-radius: 9px;
+    background: linear-gradient(180deg, #dafad7 0%, #e371ff 100%);
+    font-family: "Iceland";
+    color: #1c001f;
+    text-align: center;
+    font-size: 13px;
+    font-style: normal;
+    font-weight: 400;
+    padding: 0.5rem;
+  }
+  .contact {
+    padding: 3rem 9rem;
+  }
+  .title-contact {
+    background: linear-gradient(90deg, #e371ff 32.69%, #51e441 79.33%);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    text-align: center;
+    font-family: Inter;
+    font-size: 80px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+  }
+  .intro-contact {
+    color: #fff;
+    font-family: Iceland;
+    font-size: 32px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+  }
+  .contact-subt {
+    color: #fff;
+    font-family: Inter;
+    font-size: 32px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+  }
+  .contact-wrapper {
+    display: flex;
+    flex-direction: row;
+    gap: 3rem;
+    justify-content: space-between;
+  }
+  .contact-info {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+  }
+  .contact-form {
+    width: 80%;
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    padding-top: 5vh;
+    align-items: flex-end;
+  }
+  .contact-form input,
+  .contact-form textarea {
+    padding: 0.5rem;
+    border-radius: 5px;
+    border: 1px solid #ac67ba;
+    background: rgba(146, 146, 146, 0.21);
+    color: #fff;
+    font-family: Iceland;
+    font-size: 16px;
+    width: 80%;
+    height: 2rem;
+  }
+  .contact-form button {
+    padding: 0.5rem;
+    border-radius: 5px;
+    border: none;
+    background: linear-gradient(180deg, #dafad7 0%, #e371ff 100%);
+    color: #1c001f;
+    font-family: Iceland;
+    font-size: 16px;
+    cursor: pointer;
+  }
+  .contact-form button:hover {
+    background: linear-gradient(180deg, #e371ff 0%, #dafad7 100%);
+  }
+  .highlight {
+    background: linear-gradient(
+      270deg,
+      #dccff4 0%,
+      #b62fff 14.42%,
+      #dccff4 27.88%,
+      #b62fff 38.46%,
+      #dccff4 50%,
+      #b62fff 58.65%,
+      #dccff4 68.27%,
+      #b62fff 80.29%,
+      #dccff4 92.79%
+    );
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+  }
+  .star-cursor {
+    position: fixed;
+    pointer-events: none;
+    left: 0;
+    top: 0;
+    width: 48px;
+    height: 48px;
+    background: radial-gradient(circle, #fff7b2 60%, #ffe0fa 100%);
+    border-radius: 50%;
+    opacity: 0.95;
+    transform: translate(-50%, -50%) scale(1);
+    animation: sparkle 0.9s ease-out forwards;
+    z-index: 0;
+    box-shadow:
+      0 0 16px 4px #fff7b2,
+      0 0 32px 8px #ffe0fa;
+  }
+
+  @keyframes sparkle {
+    0% {
+      transform: translate(-50%, -50%) scale(1.2);
+      opacity: 1;
+    }
+    50% {
+      transform: translate(-50%, -50%) scale(1);
+      opacity: 0.8;
+    }
+    100% {
+      transform: translate(-50%, -50%) scale(0.5);
+      opacity: 0;
+    }
+  }
+
+  .typewriter {
+    display: inline-block;
+    overflow: hidden;
+    border-right: 2px solid #fff;
+    white-space: nowrap;
+    animation:
+      typing 3s steps(40, end),
+      blink-caret 0.7s step-end infinite;
+    font-family: inherit;
+    font-size: inherit;
+    color: #ff00f2;
+  }
+
+  @keyframes typing {
+    from {
+      width: 0;
+    }
+    to {
+      width: 40%;
+    }
+  }
+
+  @keyframes blink-caret {
+    from,
+    to {
+      border-color: transparent;
+    }
+    50% {
+      border-color: #42c3d1;
+    }
+  }
+  .contact-form-in {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+  }
+
+  @media (max-width: 768px) {
+    .hero {
+      padding: 4.5vh;
+      height: max-content;
+      height: 75vh;
+      text-align: center;
+    }
+    .about,
+    .projects,
+    .contact {
+      padding: 0vh 5vh !important;
+      width: 100% !important;
+      box-sizing: border-box;
+    }
+    .contact-wrapper {
+      flex-direction: column;
+      /* align-items: center; */
+      padding: 2vh;
+    }
+    .intro {
+      width: 100% !important;
+      font-size: 1.2rem !important;
+      box-sizing: border-box;
+    }
+    .subtitle {
+      width: 100% !important;
+      font-size: 2rem !important;
+      padding: 0 !important;
+    }
+    .hero-title {
+      margin: 0vh !important;
+      font-size: 3rem !important;
+    }
+    .hero-image{
+      display: none; 
+    }
+    .icon-tm {
+      width: 1.5rem !important;
+      height: 1.5rem !important;
+    }
+    .contact-info {
+      width: 80%;
+    }
+    .contact-form {
+      width: 80%;
+    }
+    .typewriter {
+      white-space: normal !important;
+      width: 100% !important;
+    }
+    @keyframes typing {
+      from {
+        width: 0;
+      }
+      to {
+        width: 100%;
+      }
+    }
+  }
+</style>
